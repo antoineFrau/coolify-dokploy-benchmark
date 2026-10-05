@@ -1,0 +1,8 @@
+{
+  "target": "dokploy",
+  "install_seconds": 86.6,
+  "docker_version": "Docker version 28.5.0, build 887030f",
+  "docker_compose_version": "Docker Compose version v5.6.0",
+  "kernel": "6.8.0-142-generic",
+  "os": "Ubuntu 24.04.5 LTS"
+}

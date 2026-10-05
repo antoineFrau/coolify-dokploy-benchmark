@@ -1,0 +1,7 @@
+# Overlay used only by the no-platform control deploy (bench/09-control-deploy.sh):
+# it publishes the web service on port 80 so the same host-side load test can
+# reach it exactly as it reaches the platform proxies.
+services:
+  web:
+    ports:
+      - "${CONTROL_PORT:-80}:3000"

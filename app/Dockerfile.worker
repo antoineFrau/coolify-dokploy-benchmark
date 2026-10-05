@@ -1,0 +1,13 @@
+FROM node:22-slim AS deps
+WORKDIR /app
+COPY worker/package.json worker/package-lock.json* ./
+RUN if [ -f package-lock.json ]; then npm ci --omit=dev; else npm install --omit=dev; fi
+
+FROM node:22-slim AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+COPY --from=deps /app/node_modules ./node_modules
+COPY worker/index.js ./index.js
+RUN useradd -m -u 1001 worker
+USER worker
+CMD ["node", "index.js"]

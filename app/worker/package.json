@@ -1,0 +1,10 @@
+{
+  "name": "bench-worker",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "ioredis": "5.4.1",
+    "pg": "8.13.1"
+  }
+}

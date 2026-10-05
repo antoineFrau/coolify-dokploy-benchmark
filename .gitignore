@@ -1,0 +1,6 @@
+# VM disks, cached base image and the generated benchmark ssh key.
+vm/run/
+
+# Run logs hold absolute paths from the machine that produced them.
+# The measurements themselves (JSON/JSONL) are committed.
+results/**/*.log

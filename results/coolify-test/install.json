@@ -1,0 +1,8 @@
+{
+  "target": "coolify",
+  "install_seconds": 59.1,
+  "docker_version": "Docker version 29.8.2, build 7fc2dff",
+  "docker_compose_version": "Docker Compose version v5.6.0",
+  "kernel": "6.8.0-142-generic",
+  "os": "Ubuntu 24.04.5 LTS"
+}
